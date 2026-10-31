@@ -1,1 +1,10 @@
-
+# Source: Samaras 2021, Plants 10(6):1113, Table 2
+# System/arm: tomato in sterile conditions (gnotobiotic system)
+# Strain: B. subtilis MBI 600(Tier 2) // Samaras 2021 genome analysis, see Amendment 3
+# Unit: cfu per cm root, transcribed by Abhi, 2026-10-31
+# Dose: initial application 2 × 10^10 cfu/ml (table footnote)
+# Design: samples at days 5, 15 and 20 after application, no day-0 sample
+time,time_unit,value_raw,log10_value,sd,n
+5,day,2.0e5,5.30,,
+15,day,1.3e3,3.11,,
+20,day,3.0e2,2.48,,
