@@ -1,0 +1,11 @@
+# Source: Yan, Reddy, Kloepper 2003, Can J Microbiol 49(6):383-389, Fig. 1A, printed p. 385
+# Strain: Bacillus pumilus SE34r (rifampicin-resistant mutant of SE34), Tier 2
+# System/arm: tomato ('Solar Set') transplant system, soilless medium, incorporated at 7 log CFU/g (90% moisture). Abstract says Promix, methods say Speedling Mix (paper inconsistent)
+# Unit: log CFU per g of soilless medium (2 g samples, spiral plating on rifampicin agar). Digitized with WebPlotDigitizer, error about +/-0.1-0.2 log, transcribed by Abhi, 2026-10-31
+# Design: days after planting 0, 7, 14, 21, 28; 4 replicates; error bars are standard error pooled from three experiments (not digitized)
+time,time_unit,value_raw,log10_value,sd,n
+0,day,6.51,6.51,,
+7,day,6.39,6.39,,
+14,day,6.67,6.67,,
+21,day,6.51,6.51,,
+28,day,6.50,6.50,,
