@@ -1,0 +1,10 @@
+# Source: Krebs 1998, Table 8, p. 192
+# System/arm: Seed-bacterized maize, sterilized moist sand
+# Strain: FZB47 (Tier 1) // a spontaneous streptomycin-resistant mutant of FZB24, with a similar lysotype
+# Unit: cfu per g dry weight, root surface, transcribed by Abhi, 2026-10-31
+# Design: seed coating, harvest at 14, 28 and 57 days, six plants per harvest (methods), and no day-0 sample
+# Dose discrepancy: methods say seeds were dipped in 10^9 cfu/ml, giving 10^7 cfu/seed, but the results text says 10^7 cfu/ml.
+time,time_unit,value_raw,log10_value,sd,n
+14,day,1.5e8,8.18,,
+28,day,3.1e7,7.49,,
+57,day,7.0e7,7.85,,
