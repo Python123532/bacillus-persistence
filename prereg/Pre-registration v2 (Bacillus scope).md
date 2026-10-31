@@ -49,7 +49,7 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 ### Amendment 4 (2026-10-31): Xu 2022 arm selection
 
 - **Problem:** One unplanted lab study has about 20 arms(pH levels, nutrient additions), that aren't independent, so they'd swamp the substrate stratum.
-- **Changes:** Only the control arm will be used.
+- **Changes:** Only the control arm(CK) will be used.
 - **Sensitivity:** All arms, with a random effect by study.
   
 ### Amendment 5 (2026-10-31): Jin 2026 repeated dosing
@@ -63,3 +63,9 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 - **Problem:** There are 6 arms in Table 3-3, with 4 of them showing how *Bacillus subtilis* recovers in an environment exposed to other bacteria, like Salmonella. Only 2 of them are controls(pathogen arms measure Bacillus under competition, a different question from pure inoculant persistence), so only *Bacillus subtilis* is included. Counting all 6 confounds the data by introducing competition with other bacteria present in the rockwool/peat.
 - **Changes:** Only the 2 control arms (rockwool and peat moss, no pathogen) are used in the primary analysis.
 - **Sensitivity:** Report the other 4 pathogen arms separately.
+
+### Amendment 7 (2026-10-31): Xu 2022 measurement method
+
+- **Problem:** Table 6 gives two measurements of the same sample, and they measure different things (viable cells vs DNA copies, which can include dead cells). The other series is of a viable count, so the plate counts are comparable measurements, with a goal being not to pool them both together.
+- **Changes:** Plate counts will be used as the primary series, using the CK row from Table 6. All other arms are to be excluded from this. Plate counts is chosen because it matches the unit in the other series.
+- **Sensitivity:** I'll also report the measurements from qPCR, and if the 2 disagree on the H1 verdict, I'll report both verdicts and say the result depends on the method.
