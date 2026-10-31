@@ -1,1 +1,13 @@
-
+# Source: Xu 2022, Microorganisms 10(6):1216, Table 6, CK row, plate counts (bracketed values)
+# System/arm: nursery substrate mixed with a ZF2 suspension, placed in plastic boxes within an incubator, this is an unplanted lab microcosm. //CK is not defined by the text, but results show it as the control
+# Strain: B. velezensis ZF2(Tier 1, rif+) 
+# Unit: colonies per g of substrate, transcribed by Abhi, 2026-10-31
+# Dose: OD600 = 1.0
+# Design: samples at days 1, 7, 14, 21, 28, and 35 after application, no day-0 sample
+time,time_unit,value_raw,log10_value,sd,n
+1,day,2.93e8,8.47,,
+7,day,6.00e5,5.78,,
+14,day,1.60e5,5.20,,
+21,day,7.05e4,4.85,,
+28,day,8.5e4,4.93,,
+35,day,7.22e4,4.86,,
