@@ -1,0 +1,12 @@
+# Source: Tetteh 2026, Table 3-3, p. 109
+# System/arm: rockwool + Salmonella, hydroponic crisp lettuce, n=2
+# Strain: Bacillus subtilis QST 713 (tier 1) // Reclassified as Bacillus velezensis
+# Unit: log CFU per substrate, transcribed by Abhi, 2026-10-31
+time,time_unit,value_raw,log10_value,sd,n
+0,day,5.26,5.26,0.07,2
+3,day,6.82,6.82,0.69,2
+5,day,7.07,7.07,0.04,2
+7,day,6.07,6.07,0.00,2
+10,day,6.25,6.25,0.02,2
+14,day,6.27,6.27,0.03,2
+  
