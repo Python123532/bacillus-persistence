@@ -1,0 +1,11 @@
+# Source: Tetteh 2026, Table 3-3, p. 109
+# System/arm: peat moss, Bacillus subtilis + Listeria monocytogenes, hydroponic crisp lettuce, n=2
+# Strain: Bacillus subtilis QST 713 (tier 1) // Reclassified as Bacillus velezensis
+# Unit: log CFU per substrate, transcribed by Abhi, 2026-10-31
+time,time_unit,value_raw,log10_value,sd,n
+0,day,5.37,5.37,0.05,2
+3,day,5.76,5.76,0.24,2
+5,day,5.36,5.36,0.02,2
+7,day,5.31,5.31,0.01,2
+10,day,5.15,5.15,0.02,2
+14,day,5.35,5.35,0.03,2
