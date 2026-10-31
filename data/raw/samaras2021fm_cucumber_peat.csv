@@ -1,0 +1,10 @@
+# Source: Samaras 2021, Front Microbiol 11:600393, Table 3, p. 11
+# System/arm: cucumber grown on a commercial peat substrate kept in greenhouse conditions for 20 days
+# Strain: B. subtilis MBI 600(Tier 2) // Samaras 2021 genome analysis, see Amendment 3
+# Unit: cfu per cm root, transcribed by Abhi, 2026-10-31
+# Dose: initial application 2 × 10^10 cfu/ml (table footnote)
+# Design: samples at days 5, 15 and 20 after application, no day-0 sample
+time,time_unit,value_raw,log10_value,sd,n
+5,day,3.2e7,7.51,,
+15,day,4e5,5.60,,
+20,day,2.5e4,4.40,,
