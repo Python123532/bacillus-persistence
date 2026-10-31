@@ -1,0 +1,12 @@
+# Source: Pasura 2008, PhD dissertation, Univ. of Connecticut, ProQuest AAI3325624, Fig. 1B, printed p. 52
+# Strain: Bacillus subtilis GB03 (Companion). Tier 1 on current taxonomy (B. velezensis per Borriss 2026); thesis calls it B. subtilis, see tier amendment
+# System/arm: Premier BRK soilless potting mix, geranium, 2004 trial, Companion treatment (open circles)
+# Unit: log CFU per g dry weight of mix, selective salt V8 medium. Digitized with WebPlotDigitizer, error about +/-0.1-0.2 log, transcribed by Abhi, 2026-10-31
+# Design: weeks after transplanting 0, 1, 5, 8, 12; 6-8 replicates (error bars not digitized)
+# Weeks 0 and 5: markers overlap with the HP series, one value shared
+time,time_unit,value_raw,log10_value,sd,n
+0,week,4.01,4.01,,
+1,week,2.73,2.73,,
+5,week,3.19,3.19,,
+8,week,2.40,2.40,,
+12,week,2.80,2.80,,
