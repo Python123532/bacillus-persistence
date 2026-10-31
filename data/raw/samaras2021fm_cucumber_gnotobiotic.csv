@@ -1,0 +1,10 @@
+# Source: Samaras 2021, Front Microbiol 11:600393, Table 3, p. 11
+# System/arm: cucumber in sterile glass tubes, Perloflor + sea sand + nutrient solution (gnotobiotic)
+# Strain: B. subtilis MBI 600(Tier 2) // Samaras 2021 genome analysis, see Amendment 3
+# Unit: cfu per cm root, transcribed by Abhi, 2026-10-31
+# Dose: initial application 2 × 10^10 cfu/ml (table footnote)
+# Design: samples at days 5, 15 and 20 after application, no day-0 sample
+time,time_unit,value_raw,log10_value,sd,n
+5,day,3.0e8,8.48,,
+15,day,3.2e6,6.51,,
+20,day,3.2e5,5.51,,
