@@ -57,4 +57,9 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 - **Problem:** H1 concerns a *single* application, but Jin gave 3 drenches 2 days apart, with an ambiguous time zero.
 - **Changes:** It's excluded from H1 pooling and reported separately.
 - **Sensitivity:** I'll report its own post-peak slope.
-  
+
+### Amendment 6 (2026-10-31): Tetteh 2026 arm selection
+
+- **Problem:** There are 6 arms in Table 3-3, with 4 of them showing how *Bacillus subtilis* recovers in an environment exposed to other bacteria, like Salmonella. Only 2 of them are controls(pathogen arms measure Bacillus under competition, a different question from pure inoculant persistence), so only *Bacillus subtilis* is included. Counting all 6 confounds the data by introducing competition with other bacteria present in the rockwool/peat.
+- **Changes:** Only the 2 control arms (rockwool and peat moss, no pathogen) are used in the primary analysis.
+- **Sensitivity:** Report the other 4 pathogen arms separately.
