@@ -72,6 +72,6 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 
 ### Amendment 8 (2026-10-31): Pasura 2008 GB03 Classification
 
-- **Problem:** The thesis calls GB03 *Bacillus subtilis*, but the 2026 *J Bacteriol* review classes it as *Bacillus velezensis*. The tier matters since if its Tier 1 it'll be part of the robustness check.
-- **Changes:** It will be reclassified to *Bacillus velezensis* following the review, especially since both use the exact same strain name which had not been changed. This differs with GB03’s reclassification is documented by a dedicated review, while MBI600’s wasn’t verified.
-- **Sensitivity:** I'll also report the measurements if it is treated as Tier 2, going with how the thesis names it. Then, I'll report whether or not these 2 would differ.
+- **Problem:** The thesis calls GB03 *Bacillus subtilis*, but the 2026 *J Bacteriol* review classes it as *Bacillus velezensis*. The tier matters since if its Tier 1 it'll be part of the Tier 1 only robustness check.
+- **Changes:** It will be reclassified to *Bacillus velezensis* following the review, especially since both use the exact same strain name which had not been changed. This differs from the MBI600 amendment because GB03’s reclassification is documented in a dedicated review, while MBI600’s was not verified.
+- **Sensitivity:** I'll also report the measurements if it is treated as Tier 2, going with how the thesis names it. Then, I'll report whether the Tier-1-only result differs between the two tierings.
