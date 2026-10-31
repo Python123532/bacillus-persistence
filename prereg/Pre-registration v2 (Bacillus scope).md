@@ -24,4 +24,37 @@ H1 supported only if the upper bound of the 90% confidence interval of the net l
 
 ## **6\. Search**
 
-PubMed, Europe PMC and Google Scholar, with the search strings recorded in the Dataset Log. Every record found, screened, excluded (with reason) and included is logged for a PRISMA 2020 flow diagram. Studies are included or excluded only by the criteria above, regardless of the direction of their results.
+PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the Dataset Log. Every record found, screened, excluded (with reason) and included is logged for a PRISMA 2020 flow diagram. Studies are included or excluded only by the criteria above, regardless of the direction of their results.
+
+## Amendments (append only)
+
+### Amendment 1 (Decided 2026-10-29, committed 2026-10-31): Piecewise model for rise-then-fall series
+
+- **Problem:** Some series boom, then bust(Tetteh's rockwool was up about 1.5 log, then down about 2 log). A straight line averages growth and loss, losing data validity.
+- **Changes:** A broken-stick model will be added, and for series that rise first, H1 uses the slope after the peak.
+- **Sensitivity:** I'll also report the standard log-linear slope. 'Rises first' will be defined objectively, through the fitted breakpoint as an example, but definitely not through pure eyeballing.
+
+### Amendment 2 (2026-10-31): H1 applied per system stratum
+
+- **Problem:** H1 is worded for a hydroponic reservoir, which doesn't reflect all the data(some of it comes from solution, substrate, and roots). Pooling lets a very precise potting-mix series(Yan) dominate.
+- **Changes:** H1 is tested separately per stratum, with each verdict being reported. This is because different things happen in each place, like water washout and root growth diluting counts.
+- **Sensitivity:** Also report a pooled estimate, labeled as pooled.
+
+### Amendment 3 (2026-10-31): MBI600 tier
+
+- **Problem:** Samaras' genome analysis says *Bacillus subtilis*, but the *Bacillus velezensis* reclassification isn't verified.
+- **Changes:** tier it 2. The primary analysis relies on Tiers 1 and 2 anyway, so quality point 7 counts both. This choice barely moves the primary set, and only really matters for a Tier-1-only check.
+- **Sensitivity:** re-run with MBI600 as Tier 1.
+  
+### Amendment 4 (2026-10-31): Xu 2022 arm selection
+
+- **Problem:** One unplanted lab study has about 20 arms(pH levels, nutrient additions), that aren't independent, so they'd swamp the substrate stratum.
+- **Changes:** Only the control arm will be used.
+- **Sensitivity:** All arms, with a random effect by study.
+  
+### Amendment 5 (2026-10-31): Jin 2026 repeated dosing
+
+- **Problem:** H1 concerns a *single* application, but Jin gave 3 drenches 2 days apart, with an ambiguous time zero.
+- **Changes:** It's excluded from H1 pooling and reported separately.
+- **Sensitivity:** I'll report its own post-peak slope.
+  
