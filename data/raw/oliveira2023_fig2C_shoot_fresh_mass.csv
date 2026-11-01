@@ -1,0 +1,11 @@
+# Source: Oliveira et al. 2023, Front Plant Sci 14:1248044, Fig. 2C
+# Strain: Bacillus subtilis (check strain name in the paper); lettuce, hydroponic NFT system
+# Dose: single application (confirm in methods); concentration in 10^3 CFU/mL in the nutrient solution
+# Unit: shoot fresh mass, g per plant. Digitized with WebPlotDigitizer from a broken y-axis (calibrated on the 300 and 400 ticks), error about +/-2-3 g, transcribed by Abhi, 2026-11-01
+# n=5 per dose; error bars are standard deviation (not digitized)
+dose_e3_cfu_per_ml,shoot_fresh_mass_g,sd,n
+0,313.4,,5
+7.8,357.3,,5
+15.6,382.0,,5
+31.2,393.7,,5
+62.4,336.4,,5
