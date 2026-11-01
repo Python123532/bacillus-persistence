@@ -1,0 +1,11 @@
+# Source: Jia et al. 2015, Plant Pathol J 31(2):140-151, Fig. 3A
+# Strain: Bacillus subtilis B006 (wild type), Tier 2
+# System/arm: cucumber in autoclaved nursery substrate pre-inoculated at 10^6 cfu/g, greenhouse 25-30 C; root and rhizosphere samples; seeds also inoculated with Fusarium oxysporum f. sp. cucumerinum (all treatments)
+# Unit: log cfu per g substrate, estimated by real-time PCR. Digitized with WebPlotDigitizer, error about +/-0.15 log, transcribed by Abhi, 2026-11-01
+# Design: weeks after germination 0, 1, 3, 5; triplicates; error bars not digitized
+# Week 0: all three strains share one marker. Figure shows about 6.7; text gives initial populations of about 10^6.2-10^6.4 cfu/g. Figure value used
+time,time_unit,value_raw,log10_value,sd,n
+0,week,6.73,6.73,,
+1,week,4.17,4.17,,
+3,week,4.52,4.52,,
+5,week,5.01,5.01,,
