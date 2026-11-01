@@ -111,3 +111,9 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
   - Out of scope: The field-soil arms; they don't match a substrate category.
   - Measurement: qPCR. The same measurement was used for Xu, but as a sensitivity. The reason it's primary here is that there's no other available measurement, and this method difference is to be reported. This matches the logic seen in Amendments 4 and 6.
 - **Sensitivity:** I'll include all 3 strains and report whether any verdict changes. Then, I'll also report each on its own, next to B006, without pooling. Since it's 3 points per series, many intervals may be inconclusive.
+
+### Amendment 13 (2026-11-01): Series measured under pathogen challenge (supersedes the primary designation in Amendment 12)
+
+- **Problem:** Amendment 12 made Jia 2015's wild-type strain B006 a primary series. Every Jia series was measured with the seeds also inoculated with Fusarium oxysporum f. sp. cucumerinum, and there is no pathogen-free arm. H1 concerns an inoculant after a single application without a deliberate pathogen challenge. Tetteh's pathogen arms already demoted as per Amendment 6.
+- **Changes:** Series measured under a deliberate pathogen challenge, where no pathogen-free arm exists, are sensitivity series only. All three Jia series (B006, B841, B1020) therefore change from primary to sensitivity. The other parts of Amendment 12 (the field-soil arms out of scope, qPCR as the measurement method) are unchanged. This is decided before any model has been fitted to the real data. However, the roots stratum loses a study, creating a bigger pooled interval.
+- **Sensitivity:** I will also report the primary analysis with the three Jia series included as in Amendment 12 (B006 primary), and state whether any stratum verdict changes. If it does, I will report both verdicts and say the result depends on this choice.
