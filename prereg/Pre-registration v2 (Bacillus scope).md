@@ -101,3 +101,13 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
   - Per-series verdicts are recorded regardless.
   - Limitation: The pooled estimate is exploratory because not all series within a study are independent. A study-level model fitted at the regional stage is an added analysis and does not replace this rule.
 - **Sensitivity:** For each stratum, a leave-one-out study analysis and unweighted mean of series slopes will be reported. If either of these diverge from the main pooled verdict, I'll report all verdicts and state the result depends on how it's pooled.
+
+### Amendment 12 (2026-11-01): Jia 2015 arm selection
+
+- **Problem:** Jia 2015 names 3 different strains(B006 is the wild type, B841 and B1020 are surfactin mutants), but the pre-registration doesn't specify which count and which don't.
+- **Changes:**
+  - Primary series: B006, Tier 2.
+  - Sensitivity series: B841 and B1020.
+  - Out of scope: The field-soil arms; they don't match a substrate category.
+  - Measurement: qPCR. The same measurement was used for Xu, but as a sensitivity. The reason it's primary here is that there's no other available measurement, and this method difference is to be reported. This matches the logic seen in Amendments 4 and 6.
+- **Sensitivity:** I'll include all 3 strains and report whether any verdict changes. Then, I'll also report each on its own, next to B006, without pooling. Since it's 3 points per series, many intervals may be inconclusive.
