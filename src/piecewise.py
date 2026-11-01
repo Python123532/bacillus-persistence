@@ -39,4 +39,7 @@ def compare(t, y):
 
     return delta, tb, coefs[1] + coefs[2]
 
-  
+if __name__ == "__main__":
+    from src.run_series import load_series
+    t, y = load_series("data/raw/tetteh2026_peatmoss_control.csv", "day")
+    print(compare(t, y))
