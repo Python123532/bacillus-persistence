@@ -76,7 +76,7 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 - **Changes:** It will be reclassified to *Bacillus velezensis* following the review, especially since both use the exact same strain name which had not been changed. This differs from the MBI600 amendment because GB03’s reclassification is documented in a dedicated review, while MBI600’s was not verified.
 - **Sensitivity:** I'll also report the measurements if it is treated as Tier 2, going with how the thesis names it. Then, I'll report whether the Tier-1-only result differs between the two tierings.
 
-### Amendment 9 (2026-11-1): Tetteh 2026 QST 713 Classification
+### Amendment 9 (2026-11-01): Tetteh 2026 QST 713 Classification
 
 - **Problem:** The paper calls QST 713 *Bacillus subtilis*, but as per a later genome sequencing paper, it is now *Bacillus velezensis*. The tier matters since if it is Tier 1 it'll be part of the Tier 1 only robustness check.
 - **Changes:** It will be reclassified to *Bacillus velezensis* following a later paper, Pandin 2018, which uses the same designation. This differs from the MBI600 amendment because QST 713’s reclassification is documented in a later paper, while MBI600’s was not verified.
