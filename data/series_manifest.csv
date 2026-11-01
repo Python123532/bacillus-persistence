@@ -1,0 +1,33 @@
+file,stratum,tier,role,time_unit,notes
+// stratum is either solution, substrate, or roots
+// role is primary or sensitivity, sensitivity example are Tetteh's 4 pathogen arms, Xu qPCR, and anything else an amendment demotes
+li2023_nutrient_solution_bs_atcc21332.csv,solution,2,primary,day,
+krebs1998_maize_roots_fzb24.csv,roots,1,primary,day,DSMZ B. amyloliquefaciens
+krebs1998_maize_roots_fzb37.csv,roots,2,primary,day,B. subtilis
+krebs1998_maize_roots_fzb47.csv,roots,1,primary,day,mutant of FZB24
+pasura2008_gb03_2004_premier_brk.csv,substrate,1,primary,week,Amendment 8 (GB03 tier 1)
+pasura2008_gb03_2004_premier_hp.csv,substrate,1,primary,week,Amendment 8 (GB03 tier 1)
+pasura2008_gb03_2005_berger_bm3.csv,substrate,1,primary,week,Amendment 8 (GB03 tier 1)
+pasura2008_gb03_2005_fafard_3b.csv,substrate,1,primary,week,Amendment 8 (GB03 tier 1)
+samaras2021fm_cucumber_gnotobiotic.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); sterile tube; cfu per cm root
+samaras2021fm_cucumber_hydroponic_cubes.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); cfu per cm root
+samaras2021fm_cucumber_peat.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); cfu per cm root
+samaras2021pl_tomato_gnotobiotic.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); sterile tube; cfu per cm root
+samaras2021pl_tomato_hydroponic_cubes.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); cfu per cm root
+samaras2021pl_tomato_peat.csv,roots,2,primary,day,MBI600 Tier 2 (Amendment 3); cfu per cm root
+ten2026_reservoir_counts_treatment.csv,solution,3,secondary,week,B. cereus group (Bt product); Tier 3 secondary per pre-reg
+ten2026_reservoir_spores_treatment.csv,solution,3,secondary,week,heat-treated spores; Tier 3 secondary per pre-reg
+tetteh2026_peatmoss_control.csv,substrate,1,primary,day,Amendment 6 control arm
+tetteh2026_peatmoss_lmonocytogenes.csv,substrate,1,sensitivity,day,pathogen arm
+tetteh2026_peatmoss_salmonella.csv,substrate,1,sensitivity,day,pathogen arm
+tetteh2026_rockwool_control.csv,substrate,1,primary,day,Amendment 6 control arm
+tetteh2026_rockwool_lmonocytogenes.csv,substrate,1,sensitivity,day,pathogen arm
+tetteh2026_rockwool_salmonella.csv,substrate,1,sensitivity,day,pathogen arm
+xu2022_substrate_ck_plate.csv,substrate,1,primary,day,Amendment 7: plate counts primary; CK row, Table 6
+xu2022_substrate_ck_qpcr.csv,substrate,1,sensitivity,day,Amendment 7: qPCR sensitivity; CK row, Table 6
+yan2003_medium_dose6.csv,substrate,2,primary,day,B. pumilus SE34r; 6 log CFU/g
+yan2003_medium_dose7.csv,substrate,2,primary,day,B. pumilus SE34r; 7 log CFU/g
+yan2003_medium_dose8.csv,substrate,2,primary,day,B. pumilus SE34r; 8 log CFU/g
+yan2003_roots_dose6.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 6 log CFU/g
+yan2003_roots_dose7.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 7 log CFU/g
+yan2003_roots_dose8.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 8 log CFU/g
