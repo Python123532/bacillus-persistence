@@ -1,0 +1,10 @@
+# Source: Pasura 2008, PhD dissertation, Univ. of Connecticut, ProQuest AAI3325624, Fig. 8B, printed p. 33
+# Strain: Bacillus subtilis MBI600 (Subtilex). Tier 2 per Amendment 3; thesis calls it B. subtilis
+# System/arm: Pro-mix HP soilless potting mix with Subtilex, geranium, 2005 trial (open circles, dashed line)
+# Unit: log CFU per g dry weight of potting mix. Digitized with WebPlotDigitizer, error about +/-0.1-0.2 log, transcribed by Abhi, 2026-11-01
+# Design: weeks after sowing 0, 2, 4, 8 (error bars not digitized)
+time,time_unit,value_raw,log10_value,sd,n
+0,week,3.83,3.83,,
+2,week,4.17,4.17,,
+4,week,3.92,3.92,,
+8,week,4.38,4.38,,
