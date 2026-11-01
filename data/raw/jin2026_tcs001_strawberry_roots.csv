@@ -1,0 +1,15 @@
+# Source: Jin et al. 2026, Biol Control 220:106118, doi:10.1016/j.biocontrol.2026.106118, Fig. 4 (root series)
+# Strain: Bacillus velezensis TCS001-GFP, Tier 1
+# System/arm: strawberry ('Hongyan') in pots with potting mix (composition not stated), phytotron 25 C; roots including crown; no pathogen challenge in this experiment
+# Unit: log10 CFU per g root (fresh or dry basis not stated); chloramphenicol plating with green-fluorescence count. Digitized with WebPlotDigitizer, error about +/-0.1-0.2 log, transcribed by Abhi, 2026-11-01
+# Design: days after root drenching 3, 5, 7, 14, 21, 28, 35; n = 3 plants per time point; error bars not digitized
+# Dosing: 3 root drenches, one every 2 days (10 mL broth per plant). Amendment 5: sensitivity only
+# No t = 0 sample; authors state it cannot be determined whether the root population rose before declining. Time zero ambiguous
+time,time_unit,value_raw,log10_value,sd,n
+3,day,6.92,6.92,,3
+5,day,6.74,6.74,,3
+7,day,6.35,6.35,,3
+14,day,5.71,5.71,,3
+21,day,5.63,5.63,,3
+28,day,4.58,4.58,,3
+35,day,4.71,4.71,,3
