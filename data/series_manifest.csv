@@ -1,6 +1,6 @@
 file,stratum,tier,role,time_unit,notes
-// stratum is either solution, substrate, or roots
-// role is primary or sensitivity, sensitivity example are Tetteh's 4 pathogen arms, Xu qPCR, and anything else an amendment demotes
+#stratum is either solution, substrate, or roots
+#role is primary or sensitivity, sensitivity example are Tetteh's 4 pathogen arms, Xu qPCR, and anything else an amendment demotes
 li2023_nutrient_solution_bs_atcc21332.csv,solution,2,primary,day,
 krebs1998_maize_roots_fzb24.csv,roots,1,primary,day,DSMZ B. amyloliquefaciens
 krebs1998_maize_roots_fzb37.csv,roots,2,primary,day,B. subtilis
@@ -23,8 +23,8 @@ tetteh2026_peatmoss_salmonella.csv,substrate,1,sensitivity,day,pathogen arm
 tetteh2026_rockwool_control.csv,substrate,1,primary,day,Amendment 6 control arm
 tetteh2026_rockwool_lmonocytogenes.csv,substrate,1,sensitivity,day,pathogen arm
 tetteh2026_rockwool_salmonella.csv,substrate,1,sensitivity,day,pathogen arm
-xu2022_substrate_ck_plate.csv,substrate,1,primary,day,Amendment 7: plate counts primary; CK row, Table 6
-xu2022_substrate_ck_qpcr.csv,substrate,1,sensitivity,day,Amendment 7: qPCR sensitivity; CK row, Table 6
+xu2022_substrate_ck_plate.csv,substrate,1,primary,day,Amendment 7: plate counts primary; CK row; Table 6
+xu2022_substrate_ck_qpcr.csv,substrate,1,sensitivity,day,Amendment 7: qPCR sensitivity; CK row; Table 6
 yan2003_medium_dose6.csv,substrate,2,primary,day,B. pumilus SE34r; 6 log CFU/g
 yan2003_medium_dose7.csv,substrate,2,primary,day,B. pumilus SE34r; 7 log CFU/g
 yan2003_medium_dose8.csv,substrate,2,primary,day,B. pumilus SE34r; 8 log CFU/g
