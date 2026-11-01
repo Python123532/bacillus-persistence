@@ -31,3 +31,7 @@ yan2003_medium_dose8.csv,substrate,2,primary,day,B. pumilus SE34r; 8 log CFU/g
 yan2003_roots_dose6.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 6 log CFU/g
 yan2003_roots_dose7.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 7 log CFU/g
 yan2003_roots_dose8.csv,roots,2,primary,day,peak at day 3 (Amendment 1); 8 log CFU/g
+pasura2008_mbi600_2004_premier_brk.csv,substrate,2,primary,week,MBI600 Tier 2 (Amendment 3)
+pasura2008_mbi600_2004_premier_hp.csv,substrate,2,primary,week,MBI600 Tier 2 (Amendment 3)
+pasura2008_mbi600_2005_premier_brk.csv,substrate,2,primary,week,MBI600 Tier 2 (Amendment 3)
+pasura2008_mbi600_2005_premier_hp.csv,substrate,2,primary,week,MBI600 Tier 2 (Amendment 3)
