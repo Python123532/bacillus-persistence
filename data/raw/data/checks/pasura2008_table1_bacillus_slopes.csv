@@ -1,0 +1,10 @@
+# Source: Pasura 2008, PhD dissertation, Univ. of Connecticut, ProQuest AAI3325624, Table 1, printed p. 54
+# Simple linear regressions of Bacillus (Companion, GB03) population dynamics, log CFU per g dry mix against weeks; both mixes pooled within each year
+# Year 1 (2004): HP and BRK mixes. Year 2 (2005): BM3 and F3B mixes
+# Check use only: compare against slopes from the digitized series. Do not adjust digitized data to match
+# The 2005 slope is printed as 0.65 with R2 = 0.20 and P = 0.5389; this looks like a typo (digitized 2005 curves rise about +0.1 log/week). Recorded as printed
+trial,treatment,slope_per_week,slope_p,intercept,intercept_p,r2
+2004,control,0,,0,,0
+2004,Bacillus (Companion),-0.10,0.0138,3.64,<0.0001,0.55
+2005,control,0,,0,,0
+2005,Bacillus (Companion),0.65,0.5389,4.56,<0.0001,0.20
