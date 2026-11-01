@@ -81,3 +81,23 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 - **Problem:** The paper calls QST 713 *Bacillus subtilis*, but as per a later genome sequencing paper, it is now *Bacillus velezensis*. The tier matters since if it is Tier 1 it'll be part of the Tier 1 only robustness check.
 - **Changes:** It will be reclassified to *Bacillus velezensis* following a later paper, Pandin 2018, which uses the same designation. This differs from the MBI600 amendment because QST 713’s reclassification is documented in a later paper, while MBI600’s was not verified.
 - **Sensitivity:** I'll also report the measurements if it is treated as Tier 2, going with how the dissertation names it. Then, I'll report whether the Tier-1-only result differs between the two tierings.
+
+### Amendment 10 (2026-11-01): Piecewise model application (refines Amendment 1)
+
+- **Problem:** Amendment 1 says the piecewise model is "defined objectively through the fitted breakpoint", but it does not give the exact criterion.
+- **Changes:** The piecewise model is used only if the series has at least 6 points and the piecewise model is favored over log-linear by AICc > 4. The model has 4 parameters, so it needs at least 6 points under the n - 2 rule, which makes the Tetteh and Yan root series the only ones that qualify by size. For these series, H1 uses the post-peak slope. Breakpoints may only fall where each segment has enough points, like at least 2 up to and including the breakpoint and 3 after it. If this isn't the case, the search will be restricted and will revert to log-linear. All series that do not meet the criterion use the plain log-linear slope over the whole series, even if they appear to rise first.
+- **Sensitivity:** For every series, I will also report the plain log-linear slope and the verdict it gives. If the two verdicts differ, I will report both and state that the result depends on the model.
+
+### Amendment 11 (2026-11-01): Series pooling within a stratum
+
+- **Problem:** Amendment 2 says verdicts are per stratum, but not how the series combine into one estimate.
+- **Changes:**
+  - Series included: Primary role in the manifest csv only.
+  - Unit of analysis: One paper or thesis, for Samaras they will be weighed as 2 individual papers.
+  - Within a study: Series from one study are combined before pooling via inverse-variance weighting.
+  - Across studies: Random effects model, DerSimonian-Laird variance, Hartung-Knapp intervals, confidence level about 90%
+  - Fewer than 2 studies in a stratum:
+  - Verdict: upper bound below 0.1 means supported, whole interval above means rejected, otherwise inconclusive. Keeps everything consistent.
+  - Per-series verdicts are recorded regardless.
+  - Limitation: The pooled estimate is exploratory because not all series within a study are independent. A study-level model fitted at the regional stage is an added analysis and does not replace this rule.
+- **Sensitivity:** For each stratum, a leave-one-out study analysis and unweighted mean of series slopes will be reported. If either of these diverge from the main pooled verdict, I'll report all verdicts and state the result depends on how it's pooled.
