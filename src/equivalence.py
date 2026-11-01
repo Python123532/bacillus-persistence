@@ -15,8 +15,8 @@ def loss_rate(times_weeks, log_values, level):
     high = (loss + t_crit * uncertainty)
    
     return loss, low, high
-  
-  def verdict(low, high, bound=0.1):
+
+def verdict(low, high, bound=0.1):
     if high < bound:
       return 'supported'
     elif low > bound:
