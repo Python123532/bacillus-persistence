@@ -9,6 +9,7 @@ def combine_within(df):
     w = 1 / df["se"]**2
     loss = sum(w * df["loss"]) / sum(w)
     se = 1 / np.sqrt(sum(w))
+    return loss, se
 
 def study_table(per_series):
     primary = per_series[per_series["role"] == "primary"]
