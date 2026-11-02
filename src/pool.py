@@ -98,3 +98,9 @@ if __name__ == "__main__":
     jia = pool_strata(study_table(with_jia))
     jia.to_csv("results/pooled_with_jia.csv", index=False)
     print("\nWITH JIA B006\n", jia.to_string())
+
+    all_jia = per_series.copy()
+    all_jia.loc[all_jia["study"] == "jia2015", "role"] = "primary"
+    jia3 = pool_strata(study_table(all_jia))
+    jia3.to_csv("results/pooled_all_jia.csv", index=False)
+    print("\nALL THREE JIA\n", jia3.to_string())
