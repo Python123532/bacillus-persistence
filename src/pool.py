@@ -19,13 +19,6 @@ def study_table(per_series):
       rows.append({"stratum": stratum, "study": study,
       "n_series": len(g), "loss": loss, "se": se})
     return pd.DataFrame(rows)
-
-if __name__ == "__main__":
-    per_series = pd.read_csv("results/per_series.csv")
-    print(per_series["se"].isna().sum())            # optional check, can keep
-    out = pool_strata(study_table(per_series))      # replaces the old print line
-    out.to_csv("results/pooled.csv", index=False)
-    print(out.to_string())
   
 def dl_pool(x, se, level=0.90):
     """x, se = NumPy arrays, one entry per study.
@@ -58,3 +51,10 @@ def pool_strata(studies):
                          "low": low, "high": high, "tau2": tau2,
                          "verdict": verdict(low, high)})
     return pd.DataFrame(rows)
+
+if __name__ == "__main__":
+    per_series = pd.read_csv("results/per_series.csv")
+    print(per_series["se"].isna().sum())            # optional check, can keep
+    out = pool_strata(study_table(per_series))      # replaces the old print line
+    out.to_csv("results/pooled.csv", index=False)
+    print(out.to_string())
