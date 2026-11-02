@@ -2,6 +2,7 @@
 import pandas as pd
 import os
 from src.equivalence import loss_rate, verdict
+from scipy import stats
 
 DATA_DIR = "data/raw/"
 MANIFEST = "data/series_manifest.csv"
@@ -28,6 +29,9 @@ def run_all():
             row["low"] = low
             row["high"] = high
             row["verdict"] = verdict(low, high)
+            t_crit = stats.t.ppf(0.95, len(t) - 2)       # needs: from scipy import stats
+            row["se"] = (high - low) / (2 * t_crit)      
+            row["study"] = m["file"].split("_")[0]     
         except ValueError as e:
             row["error"] = str(e)
         rows.append(row)
