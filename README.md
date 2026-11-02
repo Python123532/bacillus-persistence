@@ -6,7 +6,7 @@ The cartridge project assumes that a maintained Bacillus population in the reser
 
 ## Pre-registration
 
-Hypotheses, scope, models and decision rules are in `prereg/`, with 13 dated amendments appended. The dataset was frozen on 2026-11-01 at 02:11 (before any model was fitted to the real data); see the commit history.
+Hypotheses, scope, models and decision rules are in `prereg/`, with 13 dated amendments appended. The dataset was frozen on 2026-11-01 at 02:11 (before any model was fitted to the real data); see the commit history. Changes that are made are explicitly titled to be header-only(as seen with Pasura).
 
 ## Repository layout
 
