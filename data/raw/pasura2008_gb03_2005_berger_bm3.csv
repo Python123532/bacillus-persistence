@@ -2,7 +2,7 @@
 # Strain: Bacillus subtilis GB03 (Companion). Tier 1 on current taxonomy (B. velezensis per Borriss 2026); thesis calls it B. subtilis, see tier amendment
 # System/arm: Berger BM-3 soilless potting mix, geranium, 2005 trial, Companion treatment (open circles)
 # Unit: log CFU per g dry weight of mix, selective salt V8 medium. Digitized with WebPlotDigitizer, error about +/-0.1-0.2 log, transcribed by Abhi, 2026-10-31
-# Design: weeks after transplanting 0, 2, 4, 8; 6-8 replicates (error bars not digitized)
+# Design: weeks after transplanting 0, 2, 4, 8; 8 replicates (error bars not digitized)
 time,time_unit,value_raw,log10_value,sd,n
 0,week,4.47,4.47,,
 2,week,4.53,4.53,,
