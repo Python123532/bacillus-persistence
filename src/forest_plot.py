@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 plt.rcParams["font.family"] = "Arial"
 
@@ -37,6 +38,7 @@ def main():
     ax.set_xlabel("Loss rate (log10 per week), 90% interval")
     ax.set_xlim(-1.5, 4.5)
     fig.tight_layout()
+    os.makedirs("figures", exist_ok=True)
     fig.savefig("figures/forest.png", dpi=300)
 
 if __name__ == "__main__":
