@@ -96,7 +96,7 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
   - Unit of analysis: One paper or thesis, for Samaras they will be weighed as 2 individual papers.
   - Within a study: Series from one study are combined before pooling via inverse-variance weighting.
   - Across studies: Random effects model, DerSimonian-Laird variance, Hartung-Knapp intervals, confidence level about 90%
-  - Fewer than 2 studies in a stratum:
+  - Fewer than 2 studies in a stratum: they remain unpooled
   - Verdict: upper bound below 0.1 means supported, whole interval above means rejected, otherwise inconclusive. Keeps everything consistent.
   - Per-series verdicts are recorded regardless.
   - Limitation: The pooled estimate is exploratory because not all series within a study are independent. A study-level model fitted at the regional stage is an added analysis and does not replace this rule.
