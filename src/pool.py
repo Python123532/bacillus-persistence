@@ -52,9 +52,49 @@ def pool_strata(studies):
                          "verdict": verdict(low, high)})
     return pd.DataFrame(rows)
 
+def leave_one_out(per_series):
+    base = per_series[per_series["role"] == "primary"]
+    rows = []
+    for study in base["study"].unique():
+        reduced = per_series[per_series["study"] != study]
+        res = pool_strata(study_table(reduced))
+        res["left_out"] = study
+        rows.append(res)
+    return pd.concat(rows)
+
+def unweighted_mean(per_series):
+    prim = per_series[per_series["role"] == "primary"]
+    rows = []
+    for stratum, g in prim.groupby("stratum"):
+        x = g["loss"].to_numpy()
+        m = len(x)
+        if m < 2:
+            continue                                  # skip this stratum
+        mean = x.mean()
+        s = x.std(ddof=1)
+        t_crit = stats.t.ppf(0.95, m - 1)
+        half = t_crit * s / np.sqrt(m)
+        low, high = mean - half, mean + half          # two values, two lines of math
+        rows.append({"stratum": stratum, "m": m, "loss": mean,
+                     "low": low, "high": high, "verdict": verdict(low, high)})
+    return pd.DataFrame(rows)
+
 if __name__ == "__main__":
     per_series = pd.read_csv("results/per_series.csv")
-    print(per_series["se"].isna().sum())            # optional check, can keep
-    out = pool_strata(study_table(per_series))      # replaces the old print line
-    out.to_csv("results/pooled.csv", index=False)
-    print(out.to_string())
+    main = pool_strata(study_table(per_series))
+    main.to_csv("results/pooled.csv", index=False)
+    print("MAIN\n", main.to_string())
+
+    loo = leave_one_out(per_series)
+    loo.to_csv("results/pooled_leave_one_out.csv", index=False)
+    print("\nLEAVE ONE OUT\n", loo.to_string())
+
+    um = unweighted_mean(per_series)
+    um.to_csv("results/pooled_unweighted.csv", index=False)
+    print("\nUNWEIGHTED MEAN\n", um.to_string())
+
+    with_jia = per_series.copy()
+    with_jia.loc[with_jia["file"] == "jia2015_b006_nursery_substrate.csv", "role"] = "primary"
+    jia = pool_strata(study_table(with_jia))
+    jia.to_csv("results/pooled_with_jia.csv", index=False)
+    print("\nWITH JIA B006\n", jia.to_string())
