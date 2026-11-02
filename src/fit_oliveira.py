@@ -24,7 +24,8 @@ def main():
     print(f"peak yield = {peak:.1f} g at dose {d_star:.1f}, {gain:.0f}% over fitted Y0")
     print(f"gain over measured control = {(peak - y[0]) / y[0] * 100:.0f}%")
     rss = np.sum((y - model(d, *popt)) ** 2)
+    print(f"RSS = {rss:.0f}")
 
 if __name__ == "__main__":
     main()
-    print(f"RSS = {rss:.0f}")
+    
