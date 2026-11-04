@@ -1,5 +1,6 @@
 import numpy as np
 import streamlit as st
+import pandas as pd
 
 st.title("Bacillus cartridge release-rate simulator")
 st.caption("Screening tool. Inputs are assumptions, not measured values.")
