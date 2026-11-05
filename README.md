@@ -61,7 +61,27 @@ In general, a cartridge is justified only if the population declines after one d
 
 ## How to run
 
-TBD
+Requires Python 3 with pandas, numpy, scipy, matplotlib, sympy, pytest and streamlit:
+
+```
+pip install pandas numpy scipy matplotlib sympy pytest streamlit
+```
+
+Run every command from the repository root (the folder with this README). Each step reads the output of the step before it, so keep this order:
+
+| Step | Command | Output |
+|---|---|---|
+| 1. Per-series loss rates and verdicts | `python -m src.run_series` | `results/per_series.csv` |
+| 2. Piecewise (hinge) check | `python -m src.run_piecewise` | `results/piecewise.csv` |
+| 3. Pipeline validation against Pasura 2008, Table 1 | `python -m src.check_pasura` | prints slope (expected -0.099), R^2 (0.55), n (10) |
+| 4. Pooling and sensitivity runs | `python -m src.pool` | `results/pooled.csv`, `pooled_leave_one_out.csv`, `pooled_unweighted.csv`, `pooled_with_jia.csv`, `pooled_all_jia.csv` |
+| 5. Oliveira dose-response fit | `python -m src.fit_oliveira` | prints fitted parameters and peak |
+| 6. Figures | `python -m src.plot_oliveira`<br>`python -m src.forest_plot`<br>`python -m src.results_table`<br>`python -m src.evidence_map` | `figures/oliveira.png`, `forest.png`, `results_table.png`, `evidence_map.png` |
+| 7. Logistic-with-loss algebra check | `python -m src.check_logistic` | prints 0 and the equilibrium |
+
+Tests (synthetic data, no real series): `python -m pytest src/test_equivalence.py`
+
+Cartridge simulator (opens in the browser): `python -m streamlit run src/simulator.py`
 
 ## Limitations
 
