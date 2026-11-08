@@ -7,11 +7,11 @@ SHOW_TAU2 = True
 
 def main():
     p = pd.read_csv("results/pooled.csv")
+    ps = pd.read_csv("results/per_series.csv")
     rows = []
     for _, r in p.iterrows():
         if r["stratum"] == "solution":
             # one study, unpooled: use Li's own per-series interval
-            ps = pd.read_csv("results/per_series.csv")
             li = ps[(ps["stratum"] == "solution") & (ps["role"] == "primary")].iloc[0]
             rows.append(["Solution", "1 (unpooled)", f"{li['loss']:.3f}",
                          f"[{li['low']:.3f}, {li['high']:.3f}]", "-", li["verdict"]])
