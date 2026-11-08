@@ -6,7 +6,7 @@ The cartridge project assumes that a maintained Bacillus population in the reser
 
 ## Pre-registration
 
-Hypotheses, scope, models and decision rules are in `prereg/`, with 13 dated amendments appended. The dataset was frozen on 2026-11-01 at 02:11 (before any model was fitted to the real data); see the commit history. Changes that are made are explicitly titled to be header-only(as seen with Pasura).
+Hypotheses, scope, models and decision rules are in `prereg/`, with 16 dated amendments appended. The dataset was frozen on 2026-11-01 at 02:11 (before any model was fitted to the real data); see the commit history. Changes that are made are explicitly titled to be header-only(as seen with Pasura).
 
 ## Repository layout
 
@@ -44,7 +44,7 @@ In general, a cartridge is justified only if the population declines after one d
 
 - For each series, a log-linear model will be applied, counted against time in weeks. The loss rate would be -*b*, with *b* being the slope in **log10** units
 - A confidence interval of 90% will be calculated
-- This criterion is satisfied if the interval's upper bound is   0.1 log per week. The loss is practically zero, and the interval has to *prove* it’s small
+- This criterion is satisfied if the interval's upper bound is below 0.1 log per week. The loss is practically zero, and the interval has to *prove* it’s small
 - Rejected if the whole interval is above 0.1
 - Inconclusive otherwise, including when the interval just includes 0 but is wide
 
@@ -74,12 +74,15 @@ Run every command from the repository root (the folder with this README). Each s
 | 1. Per-series loss rates and verdicts | `python -m src.run_series` | `results/per_series.csv` |
 | 2. Piecewise (hinge) check | `python -m src.run_piecewise` | `results/piecewise.csv` |
 | 3. Pipeline validation against Pasura 2008, Table 1 | `python -m src.check_pasura` | prints slope (expected -0.099), R^2 (0.55), n (10) |
-| 4. Pooling and sensitivity runs | `python -m src.pool` | `results/pooled.csv`, `pooled_leave_one_out.csv`, `pooled_unweighted.csv`, `pooled_with_jia.csv`, `pooled_all_jia.csv` |
+| 4. Pooling and sensitivity runs | `python -m src.pool` | `results/pooled.csv`, `pooled_leave_one_out.csv`, `pooled_unweighted.csv`, `pooled_with_jia.csv`, `pooled_all_jia.csv`, `pooled_strict_n4.csv`, `pooled_hierarchical.csv`|
 | 5. Oliveira dose-response fit | `python -m src.fit_oliveira` | prints fitted parameters and peak |
 | 6. Figures | `python -m src.plot_oliveira`<br>`python -m src.forest_plot`<br>`python -m src.results_table`<br>`python -m src.evidence_map` | `figures/oliveira.png`, `forest.png`, `results_table.png`, `evidence_map.png` |
 | 7. Logistic-with-loss algebra check | `python -m src.check_logistic` | prints 0 and the equilibrium |
+| 8. Extra persistence models (pre-registered set) | `python -m src.persistence_models` | `results/persistence_models.csv` |
+| 9. Quality score and score >= 4 re-run | `python -m src.quality` | `results/quality_scores.csv`, `pooled_high_quality.csv` |
+| 10. PRISMA diagram (after counts are filled in) | `python -m src.prisma` | `figures/prisma.png` |
 
-Tests (synthetic data, no real series): `python -m pytest src/test_equivalence.py`
+Tests (synthetic data, no real series): `python -m pytest`
 
 Cartridge simulator (opens in the browser): `python -m streamlit run src/simulator.py`
 
