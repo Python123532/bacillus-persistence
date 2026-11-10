@@ -81,6 +81,7 @@ def unweighted_mean(per_series):
     return pd.DataFrame(rows)
 
 if __name__ == "__main__":
+    
     per_series = pd.read_csv("results/per_series.csv")
     main = pool_strata(study_table(per_series))
     main.to_csv("results/pooled.csv", index=False)
@@ -105,3 +106,12 @@ if __name__ == "__main__":
     jia3 = pool_strata(study_table(all_jia))
     jia3.to_csv("results/pooled_all_jia.csv", index=False)
     print("\nALL THREE JIA\n", jia3.to_string())
+
+    strict = per_series[per_series["n"] >= 4]          # Amendment 16: strict n - 2 reading
+    st = pool_strata(study_table(strict))
+    st.to_csv("results/pooled_strict_n4.csv", index=False)
+    print("\nSTRICT n >= 4 (Amendment 16)\n", st.to_string())
+
+    hier = hierarchical.run(per_series)                # Amendment 15
+    hier.to_csv("results/pooled_hierarchical.csv", index=False)
+    print("\nHIERARCHICAL (Amendment 15)\n", hier.to_string())
