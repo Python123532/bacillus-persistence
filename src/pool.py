@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 from src.equivalence import verdict
+from src import hierarchical
 
 def combine_within(df):
     """df = primary rows for ONE study in ONE stratum.
