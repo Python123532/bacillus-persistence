@@ -124,3 +124,17 @@ PubMed, Europe PMC, and Google Scholar, with the search strings recorded in the 
 - **Changes:** Unweighted mean is the mean of the primary series losses in the stratum, with a t_m-1 interval, $\bar x \pm t_{m-1}\,s/\sqrt{m}$, where m is the number of series. As for the issue with amendment 13, B006 is included only as a primary roots series.
 - **Sensitivity:** For the unweighted mean, I'll report that treating the series as independent makes the interval narrower than the study-level pooled interval. As for Amendment 13, I'll add a second run with all 3 Jia series as primary and report whether any verdict regarding the stratums changes.
 - - **Timing:** These choices were made after I had seen the main pooled results (Amendment 11), but before the unweighted-mean and Jia-included runs were done. Unlike Amendments 1-13, this amendment does not predate all the results it governs.
+ 
+### Amendment 15 (2026-11-09): Hierarchical model and quality-score subset
+
+- **Problem:** Amendment 11 allowed a later hierarchical model as an addition but never said which model. Section 3 says analyses are repeated on series scoring 4 or more, but not which analysis.
+- **Changes:** The hierarchical model is a three-level random-effects model: series within study within stratum, primary series only, fitted by REML, with a 90% interval of mu +/- t(k-1) x SE, where k is the number of studies. Same verdict rule (0.1 log per week). Strata with fewer than 2 studies stay unpooled. The quality subset is the primary series scoring 4 or more, pooled exactly as in Amendment 11. Scores are fixed in `data/quality_scores.csv` before that run.
+- **Sensitivity:** Both are reported next to the Amendment 11 result and never replace it. If a verdict differs, I report both.
+- **Timing:** Decided after the main pooled results were seen, but before either run.
+
+### Amendment 16 (2026-11-09): Parameter limit and the log-linear slope
+
+- **Problem:** Section 4 says a model may never have more than n - 2 parameters. The log-linear model has 2, so for series with n = 3 (Krebs x3, Samaras FM x3, Samaras PL x3, all primary roots series) it breaks that rule as written. These series were fitted and pooled in the main analysis.
+- **Changes:** The n - 2 limit governs model comparison (choosing between persistence models). The log-linear slope used in the H1 equivalence test only needs n >= 3, which gives 1 degree of freedom; this is what `equivalence.py` already does. The primary analysis is unchanged.
+- **Sensitivity:** A strict run drops every series with n < 4 and repeats the Amendment 11 pooling. I report whether any stratum verdict changes. If roots is left with fewer than 2 studies, it is reported as unpooled.
+- **Timing:** Found and decided after all main results were seen. It keeps the primary analysis as run, and the strict run is reported whatever it shows.
